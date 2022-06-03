@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_SMPModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="DB_SMPEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TB_CAT" EntityType="DB_SMPModel.TB_CAT" />
+    <EntitySet Name="TB_SUP" EntityType="DB_SMPModel.TB_SUP" />
+    <EntitySet Name="TB_PUR" EntityType="DB_SMPModel.TB_PUR" />
+    <AssociationSet Name="FK_TB_PUR_TB_CAT" Association="DB_SMPModel.FK_TB_PUR_TB_CAT">
+      <End Role="TB_CAT" EntitySet="TB_CAT" />
+      <End Role="TB_PUR" EntitySet="TB_PUR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_PUR_TB_SUP" Association="DB_SMPModel.FK_TB_PUR_TB_SUP">
+      <End Role="TB_SUP" EntitySet="TB_SUP" />
+      <End Role="TB_PUR" EntitySet="TB_PUR" />
+    </AssociationSet>
+    <EntitySet Name="sysdiagrams" EntityType="DB_SMPModel.sysdiagram" />
+    <EntitySet Name="TB_SELL" EntityType="DB_SMPModel.TB_SELL" />
+    <EntitySet Name="TB_CUS" EntityType="DB_SMPModel.TB_CUS" />
+    <EntitySet Name="TBUSERs" EntityType="DB_SMPModel.TBUSER" />
+  </EntityContainer>
+  <EntityType Name="TB_CAT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CAT_Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CAT_Cover" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="TB_PUR" Relationship="DB_SMPModel.FK_TB_PUR_TB_CAT" FromRole="TB_CAT" ToRole="TB_PUR" />
+  </EntityType>
+  <EntityType Name="TB_SUP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Sup_Name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Sup_Phone" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Sup_Email" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Binary" Name="Sup_Image" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="TB_PUR" Relationship="DB_SMPModel.FK_TB_PUR_TB_SUP" FromRole="TB_SUP" ToRole="TB_PUR" />
+  </EntityType>
+  <EntityType Name="TB_PUR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="Cat_id" />
+    <Property Type="Int32" Name="Supp_id" />
+    <Property Type="String" Name="Pur_Name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Pur_Type" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Pur_Cat" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Pur_Supp" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Pur_Det" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Double" Name="Pur_Buy" />
+    <Property Type="Double" Name="Pur_Sell" />
+    <Property Type="Double" Name="Pur_Qt" />
+    <Property Type="Double" Name="Pur_Tsell" />
+    <Property Type="Double" Name="Pur_Tbuy" />
+    <Property Type="Double" Name="Pur_TRev" />
+    <NavigationProperty Name="TB_CAT" Relationship="DB_SMPModel.FK_TB_PUR_TB_CAT" FromRole="TB_PUR" ToRole="TB_CAT" />
+    <NavigationProperty Name="TB_SUP" Relationship="DB_SMPModel.FK_TB_PUR_TB_SUP" FromRole="TB_PUR" ToRole="TB_SUP" />
+    <Property Type="Int32" Name="CAT_id" />
+    <Property Type="Double" Name="Purr_Tbuy" />
+  </EntityType>
+  <Association Name="FK_TB_PUR_TB_CAT">
+    <End Type="DB_SMPModel.TB_CAT" Role="TB_CAT" Multiplicity="0..1" />
+    <End Type="DB_SMPModel.TB_PUR" Role="TB_PUR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_CAT">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TB_PUR">
+        <PropertyRef Name="Cat_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_PUR_TB_SUP">
+    <End Type="DB_SMPModel.TB_SUP" Role="TB_SUP" Multiplicity="0..1" />
+    <End Type="DB_SMPModel.TB_PUR" Role="TB_PUR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_SUP">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TB_PUR">
+        <PropertyRef Name="Supp_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Type="String" Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="principal_id" Nullable="false" />
+    <Property Type="Int32" Name="diagram_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="version" />
+    <Property Type="Binary" Name="definition" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TB_SELL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Sell_Name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Sell_Cus" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Double" Name="Sell_Price" />
+    <Property Type="Double" Name="Sell_Qt" />
+    <Property Type="Double" Name="Sell_TPrice" />
+    <Property Type="DateTime" Name="Sell_Date" />
+  </EntityType>
+  <EntityType Name="TB_CUS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Sup_Name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Sup_Phone" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Sup_Email" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Binary" Name="Sup_Image" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TBUSER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Username" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Password" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Binary" Name="Image" MaxLength="Max" FixedLength="false" />
+    <Property Type="String" Name="Rol" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="stt" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Passowrd" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

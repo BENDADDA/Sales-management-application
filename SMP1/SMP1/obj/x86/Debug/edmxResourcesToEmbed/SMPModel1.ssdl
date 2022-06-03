@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_SMPModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="DB_SMPModelStoreContainer">
+    <EntitySet Name="TB_CAT" EntityType="DB_SMPModel.Store.TB_CAT" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TB_SUP" EntityType="DB_SMPModel.Store.TB_SUP" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TB_PUR" EntityType="DB_SMPModel.Store.TB_PUR" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="DB_SMPModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TB_SELL" EntityType="DB_SMPModel.Store.TB_SELL" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TB_CUS" EntityType="DB_SMPModel.Store.TB_CUS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TBUSERs" EntityType="DB_SMPModel.Store.TBUSERs" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_TB_PUR_TB_CAT" Association="DB_SMPModel.Store.FK_TB_PUR_TB_CAT">
+      <End Role="TB_CAT" EntitySet="TB_CAT" />
+      <End Role="TB_PUR" EntitySet="TB_PUR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_PUR_TB_SUP" Association="DB_SMPModel.Store.FK_TB_PUR_TB_SUP">
+      <End Role="TB_SUP" EntitySet="TB_SUP" />
+      <End Role="TB_PUR" EntitySet="TB_PUR" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="TB_CAT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CAT_Name" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="CAT_Cover" Type="varbinary(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="TB_SUP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Sup_Name" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Sup_Phone" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Sup_Email" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Sup_Image" Type="varbinary(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="TB_PUR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Cat_id" Type="int" Nullable="true" />
+    <Property Name="Supp_id" Type="int" Nullable="true" />
+    <Property Name="Pur_Name" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Pur_Type" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Pur_Cat" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Pur_Supp" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Pur_Det" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Pur_Buy" Type="float" Nullable="true" />
+    <Property Name="Pur_Sell" Type="float" Nullable="true" />
+    <Property Name="Pur_Qt" Type="float" Nullable="true" />
+    <Property Name="Pur_Tsell" Type="float" Nullable="true" />
+    <Property Name="Pur_Tbuy" Type="float" Nullable="true" />
+    <Property Name="Pur_TRev" Type="float" Nullable="true" />
+    <Property Name="CAT_id" Type="int" Nullable="true" />
+    <Property Name="Purr_Tbuy" Type="float" Nullable="true" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" Nullable="true" />
+    <Property Name="definition" Type="varbinary(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="TB_SELL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Sell_Name" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Sell_Cus" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Sell_Price" Type="float" Nullable="true" />
+    <Property Name="Sell_Qt" Type="float" Nullable="true" />
+    <Property Name="Sell_TPrice" Type="float" Nullable="true" />
+    <Property Name="Sell_Date" Type="datetime" Nullable="true" />
+  </EntityType>
+  <EntityType Name="TB_CUS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Sup_Name" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Sup_Phone" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Sup_Email" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Sup_Image" Type="varbinary(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="TBUSERs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Image" Type="varbinary(max)" Nullable="true" />
+    <Property Name="Rol" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="stt" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Passowrd" Type="nvarchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_TB_PUR_TB_CAT">
+    <End Role="TB_CAT" Type="DB_SMPModel.Store.TB_CAT" Multiplicity="0..1" />
+    <End Role="TB_PUR" Type="DB_SMPModel.Store.TB_PUR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_CAT">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TB_PUR">
+        <PropertyRef Name="Cat_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_PUR_TB_SUP">
+    <End Role="TB_SUP" Type="DB_SMPModel.Store.TB_SUP" Multiplicity="0..1" />
+    <End Role="TB_PUR" Type="DB_SMPModel.Store.TB_PUR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_SUP">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TB_PUR">
+        <PropertyRef Name="Supp_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

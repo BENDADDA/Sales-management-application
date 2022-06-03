@@ -1,0 +1,97 @@
+c:\users\hd\documents\visual studio 2010\Projects\SMP1\SMP1\bin\Debug\SMP1.exe
+c:\users\hd\documents\visual studio 2010\Projects\SMP1\SMP1\bin\Debug\SMP1.pdb
+c:\users\hd\documents\visual studio 2010\Projects\SMP1\SMP1\bin\Debug\Bunifu_UI_v1.5.3.dll
+c:\users\hd\documents\visual studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\smp.Main.resources
+c:\users\hd\documents\visual studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\smp.PL.FormCategory.resources
+c:\users\hd\documents\visual studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\smp.PL.FormHome.resources
+c:\users\hd\documents\visual studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.Properties.Resources.resources
+c:\users\hd\documents\visual studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.csproj.GenerateResource.Cache
+c:\users\hd\documents\visual studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.exe.licenses
+c:\users\hd\documents\visual studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.exe
+c:\users\hd\documents\visual studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.pdb
+C:\Users\hd\documents\visual studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.csprojResolveAssemblyReference.cache
+C:\Users\hd\Desktop\SMP1\SMP1\obj\x86\Debug\SMP1.exe
+C:\Users\hd\Desktop\SMP1\SMP1\obj\x86\Debug\SMP1.pdb
+C:\Users\hd\Documents\Visual Studio 2010\Projects\SMP1\SMP1\bin\Debug\DXApplication3.exe
+C:\Users\hd\Documents\Visual Studio 2010\Projects\SMP1\SMP1\bin\Debug\matlab.dll
+C:\Users\hd\Documents\Visual Studio 2010\Projects\SMP1\SMP1\bin\Debug\DXApplication3.pdb
+C:\Users\hd\Documents\Visual Studio 2010\Projects\SMP1\SMP1\bin\Debug\SMP1.exe.config
+C:\Users\hd\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.EPL.Toast.resources
+C:\Users\hd\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.PL.FRM_CAT.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\bin\Debug\SMP1.exe.config
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.exe
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.pdb
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.csprojResolveAssemblyReference.cache
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.EPL.Toast.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\smp.Main.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\smp.PL.FormCategory.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\smp.PL.FormHome.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.Properties.Resources.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.csproj.GenerateResource.Cache
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.exe.licenses
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\bin\Debug\SMP1.exe
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\bin\Debug\SMP1.pdb
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\bin\Debug\DXApplication3.exe
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\bin\Debug\matlab1.dll
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\bin\Debug\DXApplication3.pdb
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.PL.FRM_CAT_ADD.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.EPL.tot.resources
+D:\oo80\Visual Studio 2010\Projects\SMP1\SMP1\bin\Debug\SMP1.exe.config
+D:\oo80\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.exe
+D:\oo80\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.pdb
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\smp.PL.FormSupplier.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.PL.FRM_SUP.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\smp.PL.FormPurchases.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.PL.FRM_PUR.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.PL.FRM_SAL.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\smp.PL.FormSale.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\smp.PL.FormCustomer.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.PL.FRM_CUS.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\smp.PL.FormReport.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.PL.FRM_USE.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\smp.PL.FormUser.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.PL.Signin.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.PL.FormStar.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.PL.Reports.rcat.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.XtraReport1.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.XtraReport2.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.XtraReport3.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.XtraReport4.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.XtraReport5.resources
+F:\Archift\Projects\SMP1\SMP1\bin\Debug\SMP1.exe.config
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.exe
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.pdb
+F:\Archift\Projects\SMP1\SMP1\bin\Debug\SMP1.exe
+F:\Archift\Projects\SMP1\SMP1\bin\Debug\SMP1.pdb
+F:\Archift\Projects\SMP1\SMP1\bin\Debug\DXApplication3.exe
+F:\Archift\Projects\SMP1\SMP1\bin\Debug\matlab1.dll
+F:\Archift\Projects\SMP1\SMP1\bin\Debug\DXApplication3.pdb
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.csprojResolveAssemblyReference.cache
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.EPL.Toast.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.EPL.tot.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\smp.Main.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.PL.FormStar.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.PL.Reports.rcat.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.PL.Signin.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\smp.PL.FormUser.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.PL.FRM_USE.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\smp.PL.FormReport.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\smp.PL.FormCustomer.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.PL.FRM_CUS.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.PL.FRM_SAL.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\smp.PL.FormSale.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.PL.FRM_PUR.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\smp.PL.FormPurchases.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.PL.FRM_SUP.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\smp.PL.FormSupplier.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\smp.PL.FormCategory.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\smp.PL.FormHome.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.PL.FRM_CAT_ADD.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.Properties.Resources.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.XtraReport1.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.XtraReport2.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.XtraReport3.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.XtraReport4.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.XtraReport5.resources
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.csproj.GenerateResource.Cache
+F:\Archift\Projects\SMP1\SMP1\obj\x86\Debug\SMP1.exe.licenses

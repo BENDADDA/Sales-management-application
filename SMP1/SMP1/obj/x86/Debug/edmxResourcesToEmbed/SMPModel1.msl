@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_SMPModelStoreContainer" CdmEntityContainer="DB_SMPEntities2">
+    <EntitySetMapping Name="TB_CAT">
+      <EntityTypeMapping TypeName="IsTypeOf(DB_SMPModel.TB_CAT)">
+        <MappingFragment StoreEntitySet="TB_CAT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CAT_Name" ColumnName="CAT_Name" />
+          <ScalarProperty Name="CAT_Cover" ColumnName="CAT_Cover" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_SUP">
+      <EntityTypeMapping TypeName="IsTypeOf(DB_SMPModel.TB_SUP)">
+        <MappingFragment StoreEntitySet="TB_SUP">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Sup_Name" ColumnName="Sup_Name" />
+          <ScalarProperty Name="Sup_Phone" ColumnName="Sup_Phone" />
+          <ScalarProperty Name="Sup_Email" ColumnName="Sup_Email" />
+          <ScalarProperty Name="Sup_Image" ColumnName="Sup_Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_PUR">
+      <EntityTypeMapping TypeName="IsTypeOf(DB_SMPModel.TB_PUR)">
+        <MappingFragment StoreEntitySet="TB_PUR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Cat_id" ColumnName="Cat_id" />
+          <ScalarProperty Name="Supp_id" ColumnName="Supp_id" />
+          <ScalarProperty Name="Pur_Name" ColumnName="Pur_Name" />
+          <ScalarProperty Name="Pur_Type" ColumnName="Pur_Type" />
+          <ScalarProperty Name="Pur_Cat" ColumnName="Pur_Cat" />
+          <ScalarProperty Name="Pur_Supp" ColumnName="Pur_Supp" />
+          <ScalarProperty Name="Pur_Det" ColumnName="Pur_Det" />
+          <ScalarProperty Name="Pur_Buy" ColumnName="Pur_Buy" />
+          <ScalarProperty Name="Pur_Sell" ColumnName="Pur_Sell" />
+          <ScalarProperty Name="Pur_Qt" ColumnName="Pur_Qt" />
+          <ScalarProperty Name="Pur_Tsell" ColumnName="Pur_Tsell" />
+          <ScalarProperty Name="Pur_Tbuy" ColumnName="Pur_Tbuy" />
+          <ScalarProperty Name="Pur_TRev" ColumnName="Pur_TRev" />
+          <ScalarProperty Name="CAT_id" ColumnName="CAT_id" />
+          <ScalarProperty Name="Purr_Tbuy" ColumnName="Purr_Tbuy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="IsTypeOf(DB_SMPModel.sysdiagram)">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_SELL">
+      <EntityTypeMapping TypeName="IsTypeOf(DB_SMPModel.TB_SELL)">
+        <MappingFragment StoreEntitySet="TB_SELL">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Sell_Name" ColumnName="Sell_Name" />
+          <ScalarProperty Name="Sell_Cus" ColumnName="Sell_Cus" />
+          <ScalarProperty Name="Sell_Price" ColumnName="Sell_Price" />
+          <ScalarProperty Name="Sell_Qt" ColumnName="Sell_Qt" />
+          <ScalarProperty Name="Sell_TPrice" ColumnName="Sell_TPrice" />
+          <ScalarProperty Name="Sell_Date" ColumnName="Sell_Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_CUS">
+      <EntityTypeMapping TypeName="IsTypeOf(DB_SMPModel.TB_CUS)">
+        <MappingFragment StoreEntitySet="TB_CUS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Sup_Name" ColumnName="Sup_Name" />
+          <ScalarProperty Name="Sup_Phone" ColumnName="Sup_Phone" />
+          <ScalarProperty Name="Sup_Email" ColumnName="Sup_Email" />
+          <ScalarProperty Name="Sup_Image" ColumnName="Sup_Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBUSERs">
+      <EntityTypeMapping TypeName="IsTypeOf(DB_SMPModel.TBUSER)">
+        <MappingFragment StoreEntitySet="TBUSERs">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Rol" ColumnName="Rol" />
+          <ScalarProperty Name="stt" ColumnName="stt" />
+          <ScalarProperty Name="Passowrd" ColumnName="Passowrd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
